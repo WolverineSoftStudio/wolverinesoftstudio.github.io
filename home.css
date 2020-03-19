@@ -1,0 +1,81 @@
+@font-face {
+  font-family: Rodina-Regular;
+  src: url('font/Rodina-Regular.woff') format("woff");
+}
+
+@font-face {
+  font-family: Open-Sans;
+  src: url('font/OpenSans-SemiBold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: Open-Sans-Regular;
+  src: url('font/OpenSans-Regular.ttf') format("truetype");
+}
+
+ul {
+  font-family: Open-Sans;
+  list-style-type: none;
+  line-height: 15vh;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+  overflow: hidden;
+  z-index: 2
+}
+
+li {
+  float: right;
+  font-size: 2.75vh;
+}
+
+li a {
+  font-family: Open-Sans, sans-serif;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 3.2vh 3.2vh;
+  text-decoration: none;
+  color: rgb(30, 37, 74);
+
+
+  opacity: 1.0;
+  transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;
+}
+
+li a:hover {
+  font-family: Open-Sans, sans-serif;
+  opacity: 0.6;
+  transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;
+}
+
+
+.left {
+  float: left;
+}
+
+.left a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 3.2vh 3.2vh;
+  padding-right: 0px;
+  text-decoration: none;
+
+  opacity: 1.0;
+  transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;
+
+}
+
+.left a:hover {
+  opacity: 0.6;
+  transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;
+}

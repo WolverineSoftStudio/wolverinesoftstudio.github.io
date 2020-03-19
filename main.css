@@ -1,0 +1,137 @@
+@font-face {
+  font-family: Rodina-Regular;
+  src: url('font/Rodina-Regular.woff') format("woff");
+}
+
+@font-face {
+  font-family: Open-Sans;
+  src: url('font/OpenSans-SemiBold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: Open-Sans-Regular;
+  src: url('font/OpenSans-Regular.ttf') format("truetype");
+}
+
+.body {
+  width: 100%;
+}
+
+
+.content {
+  background-color: white;
+  width: inherit;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10vh;
+}
+
+.row {
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin-bottom: 6vh;
+  margin-top: 8vh;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+
+
+.section-left {
+  display: inline-block;
+  width: 45%;
+  height: inherit;
+  margin-right: 2%;
+
+  background-color: white;
+  color: rgb(30, 37, 74);
+  text-align: left;
+  font-family: Open-Sans, sans-serif;
+}
+
+.section-right {
+  display: inline-block;
+  width: 45%;
+  margin-left: 2%;
+  text-align: left;
+  font-family: Open-Sans, sans-serif;
+}
+
+.section-right img {
+  width: 100%;
+  height: auto;
+}
+
+.section-full {
+  background-color: white;
+  margin-top: 5vh;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 96%;
+  height: inherit;
+  display: block;
+
+  color: rgb(30, 37, 74);
+  font-size: 6.5vw;
+  text-align: center;
+  font-family: Open-Sans, sans-serif;
+}
+
+.section-full-game {
+  height: auto;
+  background-image: url("images/crystalcave_keyconcept.png");
+  background-size: cover;
+  z-index: 1000;
+
+  margin-top: 5vh;
+  margin-left: 2%;
+  margin-right: 2%;
+
+  color: white;
+  width: 96%;
+  display: block;
+  font-size: 6.5vw;
+  text-align: center;
+  font-family: Rodina-Regular;
+}
+
+
+
+.section-full-invert {
+  background-color: rgb(30, 37, 74);
+  margin-top: 5vh;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 96%;
+  height: inherit;
+  display: block;
+
+  color: white;
+  font-size: 6.5vw;
+  text-align: center;
+  font-family: Rodina-Regular, sans-serif;
+}
+
+h {
+  color: rgb(30, 37, 74);
+  font-size: 4vw;
+  text-align: center;
+  font-family: Rodina-Regular, sans-serif;
+}
+
+.rod {
+  color: rgb(30, 37, 74);
+  font-size: 4vw;
+  text-align: left;
+  font-family: Open-Sans-Regular, sans-serif;
+
+}
+
+p {
+  color: rgb(30, 37, 74);
+  font-size: 2vw;
+  text-align: justify;
+  font-family: Open-Sans-Regular, sans-serif;
+}

@@ -14,8 +14,6 @@
 }
 
 .banner-header {
-
-
 }
 
 .banner-type {
@@ -60,7 +58,7 @@
 }
 
 .section-full-sponsor {
-  margin-top: 1vh;
+  margin-top: 0vh;
   margin-left: 2%;
   margin-right: 2%;
   width: 96%;
@@ -74,9 +72,7 @@
   font-family: Open-Sans, sans-serif;;
 }
 
-
-
-button {
+.donate {
   background-color: white;
   color: rgb(30, 37, 74);;
   font-family: Rodina-Regular, sans-serif;
@@ -89,34 +85,89 @@ button {
   padding-bottom: 1vw;
   margin-bottom: 2vw;
 
+  box-shadow: 0px 0px 0px 3px rgb(30, 37, 74);
+
+  border: 3px;
   border-color: rgb(30, 37, 74);
-  border-radius: 5%;
+  border-radius: 25%;
   border-width: 3px;
 
   transition-duration: 0.4s;
+
+  text-decoration: none;
+
 }
 
-button:hover {
+.donate:hover {
   background-color: rgb(30, 37, 74);
   color: white;
   opacity: 1.0;
   transition-duration: 0.4s;
+  text-decoration: none;
 }
 
-.email {
-  color: gray;
-  font-size: 2vw;
-  text-align: justify;
-  font-family: Open-Sans-Regular, sans-serif;
-}
+.section-left-sponsor {
+  display: inline-block;
+  width: 42%;
+  height: inherit;
+  margin-right: 5%;
 
-p a {
-  color: rgb(101, 110, 162);
-}
-
-.tax {
+  background-color: white;
   color: rgb(30, 37, 74);
-  font-size: 2vw;
-  text-align: justify;
+  text-align: center;
   font-family: Open-Sans, sans-serif;
+}
+
+
+.section-right-sponsor {
+  display: inline-block;
+  width: 42%;
+  margin-left: 5%;
+  text-align: center;
+  font-family: Open-Sans, sans-serif;
+}
+
+.row-sponsor {
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin-bottom: 0vh;
+  margin-top: 0vh;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+
+.section-goals {
+  margin-top: 0vh;
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: none;
+  line-height: 3vw;
+  color: white;
+  font-size: 1.5vw;
+  text-align: center;
+  font-family: Open-Sans, sans-serif;;
+
+}
+
+
+.goal {
+  display: inline-block;
+  width: 100%;
+  height: inherit;
+  background-color: white;
+  color: rgb(30, 37, 74);
+  text-align: center;
+  font-family: Open-Sans, sans-serif;
+  font-size: 1.5vw;
+
+
+}
+
+.goal img {
+  width: auto;
+  height: 12.5vw;
 }

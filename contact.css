@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Rodina-Regular;
+  src: url('./font/Rodina-Regular.woff') format("woff");
+}
+
+@font-face {
+  font-family: Open-Sans;
+  src: url('font/OpenSans-SemiBold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: Open-Sans-Regular;
+  src: url('font/OpenSans-Regular.ttf') format("truetype");
+}
+
+.email {
+  color: gray;
+  font-size: 1.5vw;
+  text-align: justify;
+  font-family: Open-Sans-Regular, sans-serif;
+  display: inline;
+}
+
+.email:hover {
+  color: lightgray;
+}

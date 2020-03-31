@@ -38,7 +38,6 @@
 }
 
 
-
 .section-left {
   display: inline-block;
   width: 45%;
@@ -50,6 +49,7 @@
   text-align: left;
   font-family: Open-Sans, sans-serif;
 }
+
 
 .section-right {
   display: inline-block;
@@ -97,21 +97,42 @@
   font-family: Rodina-Regular;
 }
 
+.rod {
+  color: rgb(30, 37, 74);
+  font-size: 4vw;
+  text-align: left;
+  font-family: Open-Sans-Regular, sans-serif;
+}
 
+p {
+  color: rgb(30, 37, 74);
+  font-size: 2vw;
+  text-align: justify;
+  font-family: Open-Sans-Regular, sans-serif;
+}
 
-.section-full-invert {
-  background-color: rgb(30, 37, 74);
-  margin-top: 5vh;
-  margin-left: 2%;
-  margin-right: 2%;
-  width: 96%;
-  height: inherit;
-  display: block;
+.psmall {
+  color: rgb(30, 37, 74);
+  font-size: 1.5vw;
+  text-align: justify;
+  font-family: Open-Sans-Regular, sans-serif;
+}
 
-  color: white;
-  font-size: 6.5vw;
-  text-align: center;
-  font-family: Rodina-Regular, sans-serif;
+.psmallB {
+  color: rgb(30, 37, 74);
+  font-size: 1.5vw;
+  text-align: justify;
+  font-family: Open-Sans, sans-serif;
+}
+
+.pextrasmall {
+  color: rgb(30, 37, 74);
+  font-size: 1.25vw;
+  text-align: justify;
+  font-family: Open-Sans-Regular, sans-serif;
+  line-height: 1.5vw;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 h {
@@ -121,17 +142,24 @@ h {
   font-family: Rodina-Regular, sans-serif;
 }
 
-.rod {
+.hsmall {
   color: rgb(30, 37, 74);
-  font-size: 4vw;
-  text-align: left;
-  font-family: Open-Sans-Regular, sans-serif;
-
+  font-size: 2.5vw;
+  text-align: center;
+  font-family: Rodina-Regular, sans-serif;
 }
 
-p {
+h2 {
   color: rgb(30, 37, 74);
   font-size: 2vw;
-  text-align: justify;
-  font-family: Open-Sans-Regular, sans-serif;
+  text-align: center;
+  font-family: Open-Sans, sans-serif;
+}
+
+h2 a {
+  color: rgb(101, 110, 162);  
+}
+
+p a {
+  color: rgb(101, 110, 162);
 }

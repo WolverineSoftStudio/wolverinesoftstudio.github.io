@@ -4,24 +4,66 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="team.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
   </head>
 
   <body>
+    <div id="app">
 
     <ul>
       <li class="left" style="padding-bottom:0px"><a href="index.html"><img style="height: 15vh" src="images/title-logo.png"></a><li>
       <li><a href="sponsor.html">Sponsor</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="#team">The Team</a></li>
-      <li><a href="#games">Games</a></li>
+      <li><a href="build.html">Builds</a></li>
       <li><a href="#about">About</a></li>
 
     </ul>
 
     <div class="content">
 
-    </div>
+      <div class="row">
+        <div class="section-full">
+          Our Team
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="section-full">
+
+          <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#art">Art</a></li>
+              <li><a data-toggle="tab" href="#audio">Audio</a></li>
+              <li><a data-toggle="tab" href="#prog">Programming</a></li>
+              <li><a data-toggle="tab" href="#design">Design</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="art">
+              This is the art tab.
+            </div>
+            <div class="tab-pane in" id="audio">
+                This is the audio tab.
+            </div>
+            <div class="tab-pane in" id="prog">
+                This is the programming tab.
+            </div>
+            <div class="tab-pane in" id="design">
+                This is the design tab.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
   </body>
 
 </html>

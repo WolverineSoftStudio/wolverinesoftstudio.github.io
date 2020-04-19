@@ -12,3 +12,23 @@
   font-family: Open-Sans-Regular;
   src: url('font/OpenSans-Regular.ttf') format("truetype");
 }
+
+.teambox {
+  position: aboslute;
+}
+
+
+.teammember {
+  font-size: 12px;
+  position: relative;
+  height: 200px;
+  display: inline-block;
+
+
+}
+
+.teammember img {
+  height: 200px;
+  width: auto;
+
+}

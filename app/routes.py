@@ -1,9 +1,11 @@
 from app import app
 from flask import render_template
-
-
+import urllib.request
 import csv
 import os
+
+from lxml import html
+import requests
 
 
 @app.route('/')
@@ -53,4 +55,49 @@ def about():
 
 @app.route('/build')
 def build():
+
+    rooturl = 'https://studio.eecs.umich.edu/builds/'
+    devurl = 'https://studio.eecs.umich.edu/builds/development/'
+    masterurl = 'https://studio.eecs.umich.edu/builds/master/'
+
+
+    rootpage = requests.get(rooturl)
+    devpage = requests.get(devurl)
+    masterpage = requests.get(masterurl)
+
+    roottree = html.fromstring(rootpage.content)
+    devtree = html.fromstring(devpage.content)
+    mastertree = html.fromstring(masterpage.content)
+
+    rootURLs = roottree.xpath('//a')
+    devURLs = devtree.xpath('//a')
+    masterURLs = mastertree.xpath('//a')
+
+    print(rootURLs)
+    print(devURLs)
+    print(masterURLs)
+
+    rootfiles = []
+    devfiles = []
+    masterfiles = []
+
+    for name in rootURLs:
+        if ('.zip' in name.get('href')):
+            # download file, display on site
+            rootfiles.append({'name': name.get('href'), 'link': ('./app/data/' + name.get('href'))})
+
+    for name in devURLs:
+        if ('.zip' in name.get('href')):
+            # download file, display on site
+            devfiles.append({'name': name.get('href'), 'link': ('./app/data/' + name.get('href'))})
+
+    for name in masterURLs:
+        if ('.zip' in name.get('href')):
+            # download file, display on site
+            masterfiles.append({'name': name.get('href'), 'link': ('./app/data/' + name.get('href'))})
+
+
+    print(devURLs)
+
+
     return render_template('build.html')

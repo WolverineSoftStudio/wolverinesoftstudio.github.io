@@ -1,23 +1,20 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/team.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!--- script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/team.css') }}">
+</head>
 
-  </head>
+<body>
+  <div id="app">
 
-  <body>
-    <div id="app">
-
-      <ul>
-        <li class="left" style="padding-bottom:0px"><a href="{{ url_for('index') }}"><img style="height: 15vh" src="{{ url_for('static', filename='images/title-logo.png') }}"></a><li>
+    <ul>
+      <li class="left" style="padding-bottom:0px"><a href="{{ url_for('index') }}"><img style="height: 15vh" src="{{ url_for('static', filename='images/title-logo.png') }}"></a><li>
         <li><a href="{{ url_for('sponsor') }}">Sponsor</a></li>
         <li><a href="{{ url_for('contact') }}">Contact</a></li>
         <li><a href="{{ url_for('team') }}">The Team</a></li>
@@ -25,77 +22,77 @@
         <li><a href="{{ url_for('about') }}">About</a></li>
       </ul>
 
-    <div class="content">
+      <div class="content">
 
-      <div class="row">
-        <div class="section-full">
-          Our Team
+        <div class="row">
+          <div class="section-full">
+            Our Team
+          </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="section-full">
+        <div class="row">
+          <div class="section-full">
 
-          <ul class="nav nav-tabs">
+            <ul class="nav nav-tabs">
               <li class="active"><a data-toggle="tab" href="#art">Art</a></li>
               <li><a data-toggle="tab" href="#audio">Audio</a></li>
               <li><a data-toggle="tab" href="#prog">Programming</a></li>
               <li><a data-toggle="tab" href="#design">Design</a></li>
-          </ul>
+            </ul>
 
-          <div class="tab-content">
+            <div class="tab-content">
 
-            <div class="tab-pane active" id="art">
-
-              <div class="teambox">
-              {% for member in art %}
-              <div class="teammember">
-                {{ member[1] }}
-                <img src="static/images/team/{{ member[3] }}">
+              <div class="tab-pane active" id="art">
+                <div class="teambox" style="font-size: 10px; display: inline; flex-direction: column;">
+                  {% for member in prog %}
+                  <div id="teammember" style="width: 210px; height: 210px; margin: 5px; display: inline-block; text-align: left; position: relative;">
+                    <img style="height: 200px; position: absolute;" src="static/images/team/{{ member[3] }}">
+                    <p style="position: absolute;">{{ member[1] }} </p>
+                  </div>
+                  {% endfor %}
+                </div>
               </div>
-              {% endfor %}
+
+              <div class="tab-pane in" id="audio">
+                <div class="teambox" style="font-size: 10px; display: inline; flex-direction: column;">
+                  {% for member in prog %}
+                  <div id="teammember" style="width: 210px; height: 210px; margin: 5px; display: inline-block; text-align: left; position: relative;">
+                    <img style="height: 200px; position: absolute;" src="static/images/team/{{ member[3] }}">
+                    <p style="position: absolute;">{{ member[1] }} </p>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+
+              <div class="tab-pane in" id="prog">
+                <div class="teambox" style="font-size: 10px; display: inline; flex-direction: column;">
+                  {% for member in prog %}
+                  <div id="teammember" style="width: 210px; height: 210px; margin: 5px; display: inline-block; text-align: left; position: relative;">
+                    <img style="height: 200px; position: absolute;" src="static/images/team/{{ member[3] }}">
+                    <p style="position: absolute;">{{ member[1] }} </p>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+
+              <div class="tab-pane in" id="design">
+                <div class="teambox" style="font-size: 10px; display: inline; flex-direction: column;">
+                  {% for member in design %}
+                  <div id="teammember" style="width: 210px; height: 210px; margin: 5px; display: inline-block; text-align: left; position: relative;">
+                    <img style="height: 200px; position: absolute;" src="static/images/team/{{ member[3] }}">
+                    <p style="position: absolute;">{{ member[1] }} </p>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+
             </div>
+
           </div>
-
-            <div class="tab-pane in" id="audio">
-              <div class="teambox">
-
-              {% for member in audio %}
-              <div class="teammember">
-                {{ member[1] }}
-              </div>
-              {% endfor %}
-            </div>
-            </div>
-
-            <div class="tab-pane in" id="prog">
-              <div class="teambox">
-              {% for member in prog %}
-              <div class="teammember">
-                {{ member[1] }}
-                <img src="static/images/team/{{ member[3] }}">
-              </div>
-              {% endfor %}
-            </div>
-            </div>
-
-            <div class="tab-pane in" id="design">
-              <div class="teambox">
-              {% for member in design %}
-              <div class="teammember">
-                {{ member[1] }}
-              </div>
-              {% endfor %}
-            </div>
-            </div>
-
-          </div>
-
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
   </body>
 
-</html>
+  </html>

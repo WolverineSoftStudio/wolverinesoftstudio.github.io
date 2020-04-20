@@ -18,7 +18,7 @@
 }
 
 
-.teammember {
+#teammember {
   font-size: 12px;
   position: relative;
   height: 200px;
@@ -27,8 +27,8 @@
 
 }
 
-.teammember img {
-  height: 200px;
+#teammember img {
+  height: 20px;
   width: auto;
 
 }

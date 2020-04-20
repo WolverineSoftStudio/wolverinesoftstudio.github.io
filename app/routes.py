@@ -23,7 +23,6 @@ def contact():
 
 @app.route('/team')
 def team():
-    print(os.getcwd())
     with open('./app/static/data/team.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter='\t')
         line_count = 0
@@ -34,7 +33,6 @@ def team():
         design = []
 
         for row in csv_reader:
-            print(row)
             if (row[2] == "art"):
                 art.append(row)
             elif (row[2] == "audio"):

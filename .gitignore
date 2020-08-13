@@ -1,5 +1,6 @@
 .sass-cache
 .jekyll-metadata
 files/daily-builds
+builds/
 
 .DS_Store

@@ -1,42 +1,105 @@
+@font-face {
+  font-family: Rodina Regular;
+  src: url("/font/Rodina-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: Open-Sans;
+  src: url("/font/OpenSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: Open-Sans-Regular;
+  src: url("/font/OpenSans-Regular.ttf") format("truetype");
+}
 /* Style the button that is used to open and close the collapsible content */
-.collapsible {
-	background-color: #eee;
-	color: #444;
-	cursor: pointer;
-	padding: 18px;
-	width: 100%;
-	border: none;
-	text-align: left;
-	outline: none;
-	font-size: 15px;
+html {
+  text-shadow: none;
+  background-color: #F5F5F5;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+* {
+  font-family: Open-Sans-Regular, sans-serif;
+}
+
+body {
+  width: 960px;
+  margin: auto;
+}
+
+.collapsible {
+  background-color: #D6D6D6;
+  font-size: 15px;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  margin: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  text-align: left;
+  outline: none;
+  transition: 0.2s;
+}
+
+/* Add a background color to the button if it is clicked on 
+	(add the .active class with JS), and when you move the mouse over it 
+	(hover) */
 .active, .collapsible:hover {
-	background-color: #ccc;
+  background-color: #AFAFAF;
 }
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-	padding: 0 18px;
-	background-color: teal;
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.2s ease-out;
+  padding: 0 18px;
+  background-color: lightblue;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
 
 .collapsible:after {
-	content: '\02795'; /* Unicode character for "plus" sign (+) */
-	font-size: 13px;
-	color: white;
-	float: right;
-	margin-left: 5px;
+  content: url("/files/icons/chevron-down.svg");
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
 }
 
 .active:after {
-	content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: url("/files/icons/chevron-up.svg");
 }
 
 .executable-group {
-	display: flex;
+  display: flex;
+  justify-content: flex-start;
 }
+.executable-group .download-label {
+  font-size: 22px;
+  text-align: center;
+  margin: auto 0;
+}
+.executable-group .link-button, .executable-group .link-button:visited {
+  width: 125px;
+  padding: 10px 2px;
+  border-style: none;
+  border-radius: 50px;
+  font-size: 19px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #147EFB;
+  margin: 18px 9px;
+}
+.executable-group .link-button:hover {
+  background-color: #489DFF;
+  transition: 0.2s;
+}
+.executable-group .link-button:active {
+  background-color: #1A66BF;
+  transition: 0.1s;
+}
+
+.build-description h2 {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=daily-builds.css.map */

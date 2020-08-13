@@ -2,5 +2,7 @@
 .jekyll-metadata
 files/daily-builds
 builds/
+*.swp
+*.map
 
 .DS_Store

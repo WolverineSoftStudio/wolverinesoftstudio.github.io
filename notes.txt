@@ -1,0 +1,7 @@
+* nice website for icons: https://tablericons.com/
+
+
+==== TODO ====
+* install & use .scss for styling
+* clean out files from incomplete website redesign
+
